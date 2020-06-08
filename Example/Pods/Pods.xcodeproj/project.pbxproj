@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0300C3841F96163F25950757052EE976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4856D541177FD3813B7ED12B3FBF9A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		5CF1911E334B36EE3B958230A24F9D6F /* Pods-FPSLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B495541AFC681C861D8DCA036B03B4A4 /* Pods-FPSLabel_Example-dummy.m */; };
-		6FB80776249A782B6F88D2B541FC9FDC /* FPSLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB9DC86EC8280D20B66F93BFF515F /* FPSLabel-dummy.m */; };
-		75570ADC3E70E5C83A3394AEAC911047 /* FPSLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B921C676E08ACEE1687383D1C364B7 /* FPSLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EC805853DEE4E1888AE74618D61260A /* JRWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D041A33ED9AEE14C991307D6CC841E7 /* JRWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CC293868DCE0C8ABB424C6CB31DD391 /* UIViewController+FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98015D218085395EE376099FCEECB6E9 /* UIViewController+FPSLabel.m */; };
+		7992ABA4E5B08BE9D6EA5E63D4E453FD /* UIViewController+FPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E08238B8309582E155502E1ACB39B61C /* UIViewController+FPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AC92DF41938379D2829FA98206DB5F3 /* FPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 898B59D8052E8A2E68A04ABFE8679B4A /* FPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A243C017AEEE177E107E625A27C2FBB9 /* Pods-FPSLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3667409AA2DEEC6AFFF1F32F171218FB /* Pods-FPSLabel_Tests-dummy.m */; };
-		A66AFB1A4DE707B5C0E5B04EC0E82DBD /* FPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EBCAABF0353D3462B734EBE45498E8 /* FPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC555305AE748D3743FEB3992D62A99A /* FPSLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E3F3F607D2C6CC16AE3CA97EF652D9 /* FPSLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBD110DD7B66C3FE3C750033CA14F66E /* JRWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C581629B80923D4E3EF358A8E27B4E /* JRWeakProxy.m */; };
 		C69121944A88D4E86A6CCBF19EEF9BF2 /* Pods-FPSLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB40D1BF5E6EC1E548ABA316E1496E7 /* Pods-FPSLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8AFE89651712CA48A06A8EA22043D7F /* JRWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 362553C5260B76277FD88386C2C7059A /* JRWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C971775F4952CF716A504055A821399C /* FPSLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3094ACDA4248DC096A15FE1796D57ED /* FPSLabel-dummy.m */; };
+		CBC9E54430B84545969CE70970A20E1D /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B1D63DF263EADCAFDDBBFC4C5CF43 /* FPSLabel.m */; };
 		DC41D47F32CEC468A63068C826B36356 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DC8BB105519820AD8DD2A9FB4F857784 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 436A8C8225CB17E20B363DEC7AB51B8D /* FPSLabel.m */; };
-		EBDF2799A4C5F94FF19BD28FE365CCDD /* JRWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B223A30FE9F7F9A903C8ACC37F560 /* JRWeakProxy.m */; };
-		F54FE42A29CE3E8967DD26360C920C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		FD710A38C1FF5F4DFD74EE623369195F /* Pods-FPSLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F0D04AC83AF1A0327D317217990151 /* Pods-FPSLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,53 +47,55 @@
 		158415EDA0AB6715D6CAEBDA9AAB2FF8 /* Pods-FPSLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FPSLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
 		18952123C97359A4C81B1CDE7937E6E0 /* Pods-FPSLabel_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FPSLabel_Example-Info.plist"; sourceTree = "<group>"; };
 		2403DA29A5C2B51390237D6EC302856A /* Pods-FPSLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FPSLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		29BFE3788E13FF9D863185DBAA73FE76 /* FPSLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPSLabel-prefix.pch"; sourceTree = "<group>"; };
-		2B5C4D66C6F5D6E2703857CFAC16DAAC /* FPSLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FPSLabel.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		322261D43703F68E213DDF6CDF097AB2 /* Pods_FPSLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FPSLabel_Tests.framework; path = "Pods-FPSLabel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		342B223A30FE9F7F9A903C8ACC37F560 /* JRWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JRWeakProxy.m; path = FPSLabel/Classes/JRWeakProxy.m; sourceTree = "<group>"; };
+		362553C5260B76277FD88386C2C7059A /* JRWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JRWeakProxy.h; path = FPSLabel/Classes/JRWeakProxy.h; sourceTree = "<group>"; };
 		3667409AA2DEEC6AFFF1F32F171218FB /* Pods-FPSLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FPSLabel_Tests-dummy.m"; sourceTree = "<group>"; };
-		436A8C8225CB17E20B363DEC7AB51B8D /* FPSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPSLabel.m; path = FPSLabel/Classes/FPSLabel.m; sourceTree = "<group>"; };
+		37AA3DE7EC33070E0C526F329261E080 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		497203416A611324F781B9BA369A6B17 /* Pods-FPSLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FPSLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FE1CACAD1AA16038FC01EA9678B3139 /* Pods-FPSLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FPSLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		53521656605563178F1CCFC4430B9460 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		61A15D1992536442BE7B72225B484FAF /* FPSLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FPSLabel-Info.plist"; sourceTree = "<group>"; };
-		6D041A33ED9AEE14C991307D6CC841E7 /* JRWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JRWeakProxy.h; path = FPSLabel/Classes/JRWeakProxy.h; sourceTree = "<group>"; };
+		5D11147AA56C99AC3E65422034052416 /* FPSLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FPSLabel.release.xcconfig; sourceTree = "<group>"; };
+		7E00B4AC8EA44DA366319A539435BB30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		898B59D8052E8A2E68A04ABFE8679B4A /* FPSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FPSLabel.h; path = FPSLabel/Classes/FPSLabel.h; sourceTree = "<group>"; };
+		89E3F3F607D2C6CC16AE3CA97EF652D9 /* FPSLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPSLabel-umbrella.h"; sourceTree = "<group>"; };
 		8A5347132E05C5DCF426EF3CA0AFBDDF /* Pods-FPSLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FPSLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8E10C39A4B593DF05BA2889F426DDB92 /* FPSLabel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FPSLabel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98015D218085395EE376099FCEECB6E9 /* UIViewController+FPSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+FPSLabel.m"; path = "FPSLabel/Classes/UIViewController+FPSLabel.m"; sourceTree = "<group>"; };
+		9A4B1D63DF263EADCAFDDBBFC4C5CF43 /* FPSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPSLabel.m; path = FPSLabel/Classes/FPSLabel.m; sourceTree = "<group>"; };
 		9C2F82392093F1E56A23C0034725E5D0 /* Pods-FPSLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FPSLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F7C0E7355C6A8A006D74F4BC1A8D28C /* Pods-FPSLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FPSLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A7B0B1965AD44503A891D4DFF4867E7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A0475F09870F9EADF364EBB9C1C77BA3 /* FPSLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FPSLabel.debug.xcconfig; sourceTree = "<group>"; };
 		AD005B78C6B7571860F7F5EA25E56EA2 /* Pods_FPSLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FPSLabel_Example.framework; path = "Pods-FPSLabel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D05D990FB2CFFC16C48D708F10BE41 /* FPSLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FPSLabel-Info.plist"; sourceTree = "<group>"; };
+		B3094ACDA4248DC096A15FE1796D57ED /* FPSLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FPSLabel-dummy.m"; sourceTree = "<group>"; };
 		B495541AFC681C861D8DCA036B03B4A4 /* Pods-FPSLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FPSLabel_Example-dummy.m"; sourceTree = "<group>"; };
-		B5EBCAABF0353D3462B734EBE45498E8 /* FPSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FPSLabel.h; path = FPSLabel/Classes/FPSLabel.h; sourceTree = "<group>"; };
-		C4B921C676E08ACEE1687383D1C364B7 /* FPSLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPSLabel-umbrella.h"; sourceTree = "<group>"; };
+		B7C581629B80923D4E3EF358A8E27B4E /* JRWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JRWeakProxy.m; path = FPSLabel/Classes/JRWeakProxy.m; sourceTree = "<group>"; };
 		C8F0D04AC83AF1A0327D317217990151 /* Pods-FPSLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FPSLabel_Example-umbrella.h"; sourceTree = "<group>"; };
 		CDFFA4BA6F3FF95BF1568082B87D4CAF /* Pods-FPSLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FPSLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D247431C14F2A366208D17365060956F /* FPSLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FPSLabel.release.xcconfig; sourceTree = "<group>"; };
-		D5D4B9B1B86BE6584113A81BDF677503 /* FPSLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FPSLabel.debug.xcconfig; sourceTree = "<group>"; };
-		E9A27BB26D89B207F522BC2B4A3385E8 /* FPSLabel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FPSLabel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DFAC6A14A2401667F2A1F716A1688164 /* FPSLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPSLabel-prefix.pch"; sourceTree = "<group>"; };
+		E08238B8309582E155502E1ACB39B61C /* UIViewController+FPSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+FPSLabel.h"; path = "FPSLabel/Classes/UIViewController+FPSLabel.h"; sourceTree = "<group>"; };
 		E9B54570EFB6D493468645EF1EF32C56 /* Pods-FPSLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FPSLabel_Tests.modulemap"; sourceTree = "<group>"; };
 		F6C8BD506ECE9BF9DEF51C1981DDA25B /* Pods-FPSLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FPSLabel_Example.modulemap"; sourceTree = "<group>"; };
-		F6FCB9DC86EC8280D20B66F93BFF515F /* FPSLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FPSLabel-dummy.m"; sourceTree = "<group>"; };
+		FCD1C9E39851B354ACE52E690EF86095 /* FPSLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FPSLabel.modulemap; sourceTree = "<group>"; };
 		FD8E33DB2BE1CAE85F59D6192B1C00F0 /* FPSLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FPSLabel.framework; path = FPSLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB40D1BF5E6EC1E548ABA316E1496E7 /* Pods-FPSLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FPSLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0000ED20577A041977731ED3BE4CA1CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F54FE42A29CE3E8967DD26360C920C82 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2774E52D99085CA6A1B85C943DAF2BC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC41D47F32CEC468A63068C826B36356 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E54431BBBFD494C5FCF90D233A912E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4856D541177FD3813B7ED12B3FBF9A7C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,35 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CBDCCED099CEA2734AECE3783D4BD2C /* FPSLabel */ = {
-			isa = PBXGroup;
-			children = (
-				B5EBCAABF0353D3462B734EBE45498E8 /* FPSLabel.h */,
-				436A8C8225CB17E20B363DEC7AB51B8D /* FPSLabel.m */,
-				6D041A33ED9AEE14C991307D6CC841E7 /* JRWeakProxy.h */,
-				342B223A30FE9F7F9A903C8ACC37F560 /* JRWeakProxy.m */,
-				7BD4A3B656BE458EFB0C888337C9D5BE /* Pod */,
-				16D6B59FE4BB7A98672467A872F65166 /* Support Files */,
-			);
-			name = FPSLabel;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		16D6B59FE4BB7A98672467A872F65166 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2B5C4D66C6F5D6E2703857CFAC16DAAC /* FPSLabel.modulemap */,
-				F6FCB9DC86EC8280D20B66F93BFF515F /* FPSLabel-dummy.m */,
-				61A15D1992536442BE7B72225B484FAF /* FPSLabel-Info.plist */,
-				29BFE3788E13FF9D863185DBAA73FE76 /* FPSLabel-prefix.pch */,
-				C4B921C676E08ACEE1687383D1C364B7 /* FPSLabel-umbrella.h */,
-				D5D4B9B1B86BE6584113A81BDF677503 /* FPSLabel.debug.xcconfig */,
-				D247431C14F2A366208D17365060956F /* FPSLabel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FPSLabel";
-			sourceTree = "<group>";
-		};
 		328766D51D8EEBAF5ABD822AE2172052 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,22 +146,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6B3975FBD6A1DDCBD6109DE8A3B41A68 /* Development Pods */ = {
+		836CA36E8F4938B9988541C323AF7D51 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0CBDCCED099CEA2734AECE3783D4BD2C /* FPSLabel */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7BD4A3B656BE458EFB0C888337C9D5BE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E9A27BB26D89B207F522BC2B4A3385E8 /* FPSLabel.podspec */,
-				A7B0B1965AD44503A891D4DFF4867E7B /* LICENSE */,
-				53521656605563178F1CCFC4430B9460 /* README.md */,
+				8E10C39A4B593DF05BA2889F426DDB92 /* FPSLabel.podspec */,
+				37AA3DE7EC33070E0C526F329261E080 /* LICENSE */,
+				7E00B4AC8EA44DA366319A539435BB30 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		96D1D4D506495CCC3C5BD9AA29745E19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1C9E39851B354ACE52E690EF86095 /* FPSLabel.modulemap */,
+				B3094ACDA4248DC096A15FE1796D57ED /* FPSLabel-dummy.m */,
+				B0D05D990FB2CFFC16C48D708F10BE41 /* FPSLabel-Info.plist */,
+				DFAC6A14A2401667F2A1F716A1688164 /* FPSLabel-prefix.pch */,
+				89E3F3F607D2C6CC16AE3CA97EF652D9 /* FPSLabel-umbrella.h */,
+				A0475F09870F9EADF364EBB9C1C77BA3 /* FPSLabel.debug.xcconfig */,
+				5D11147AA56C99AC3E65422034052416 /* FPSLabel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FPSLabel";
 			sourceTree = "<group>";
 		};
 		BD3326A00A66EA1D803C43A5BBC8255C /* Pods-FPSLabel_Tests */ = {
@@ -217,11 +199,27 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6B3975FBD6A1DDCBD6109DE8A3B41A68 /* Development Pods */,
+				DD46DCF4343FCBF821B9148574FB6FE9 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				328766D51D8EEBAF5ABD822AE2172052 /* Products */,
 				455718F59BC08C38DA025D7D16039D89 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D013826B8238C67F04FED3C563010FF0 /* FPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				898B59D8052E8A2E68A04ABFE8679B4A /* FPSLabel.h */,
+				9A4B1D63DF263EADCAFDDBBFC4C5CF43 /* FPSLabel.m */,
+				362553C5260B76277FD88386C2C7059A /* JRWeakProxy.h */,
+				B7C581629B80923D4E3EF358A8E27B4E /* JRWeakProxy.m */,
+				E08238B8309582E155502E1ACB39B61C /* UIViewController+FPSLabel.h */,
+				98015D218085395EE376099FCEECB6E9 /* UIViewController+FPSLabel.m */,
+				836CA36E8F4938B9988541C323AF7D51 /* Pod */,
+				96D1D4D506495CCC3C5BD9AA29745E19 /* Support Files */,
+			);
+			name = FPSLabel;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -232,24 +230,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD46DCF4343FCBF821B9148574FB6FE9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D013826B8238C67F04FED3C563010FF0 /* FPSLabel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2397887C0D30DD747E2664D4C6B74E85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC555305AE748D3743FEB3992D62A99A /* FPSLabel-umbrella.h in Headers */,
+				9AC92DF41938379D2829FA98206DB5F3 /* FPSLabel.h in Headers */,
+				C8AFE89651712CA48A06A8EA22043D7F /* JRWeakProxy.h in Headers */,
+				7992ABA4E5B08BE9D6EA5E63D4E453FD /* UIViewController+FPSLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFD197156DA01BEB624B70AF2F815193 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C69121944A88D4E86A6CCBF19EEF9BF2 /* Pods-FPSLabel_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E13BB6FC40B41445D9BBCC3B21F3445A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75570ADC3E70E5C83A3394AEAC911047 /* FPSLabel-umbrella.h in Headers */,
-				A66AFB1A4DE707B5C0E5B04EC0E82DBD /* FPSLabel.h in Headers */,
-				8EC805853DEE4E1888AE74618D61260A /* JRWeakProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +311,12 @@
 		};
 		C6AD4BB74479326F385E813BB38A8ABB /* FPSLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 075925699CEAC687E81306A1CC08219C /* Build configuration list for PBXNativeTarget "FPSLabel" */;
+			buildConfigurationList = 85F6F23B4DCB7DE2879B20356DB6342C /* Build configuration list for PBXNativeTarget "FPSLabel" */;
 			buildPhases = (
-				E13BB6FC40B41445D9BBCC3B21F3445A /* Headers */,
-				546072DC3FA9C30CDAB5A708A90C2E10 /* Sources */,
-				0000ED20577A041977731ED3BE4CA1CC /* Frameworks */,
-				F46C6B10C43127CEB3D056220B0EA412 /* Resources */,
+				2397887C0D30DD747E2664D4C6B74E85 /* Headers */,
+				B473CF16849903626899A40A0726DD15 /* Sources */,
+				46E54431BBBFD494C5FCF90D233A912E /* Frameworks */,
+				F0AA611A90B584F1E062FC84753921A9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -357,7 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F46C6B10C43127CEB3D056220B0EA412 /* Resources */ = {
+		F0AA611A90B584F1E062FC84753921A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,21 +381,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		546072DC3FA9C30CDAB5A708A90C2E10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FB80776249A782B6F88D2B541FC9FDC /* FPSLabel-dummy.m in Sources */,
-				DC8BB105519820AD8DD2A9FB4F857784 /* FPSLabel.m in Sources */,
-				EBDF2799A4C5F94FF19BD28FE365CCDD /* JRWeakProxy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8096F0A0F7CAFDF67ECA574A34E29256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5CF1911E334B36EE3B958230A24F9D6F /* Pods-FPSLabel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B473CF16849903626899A40A0726DD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971775F4952CF716A504055A821399C /* FPSLabel-dummy.m in Sources */,
+				CBC9E54430B84545969CE70970A20E1D /* FPSLabel.m in Sources */,
+				BBD110DD7B66C3FE3C750033CA14F66E /* JRWeakProxy.m in Sources */,
+				6CC293868DCE0C8ABB424C6CB31DD391 /* UIViewController+FPSLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +651,38 @@
 			};
 			name = Release;
 		};
+		B600B202869DA94411CBE8E16A6914A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D11147AA56C99AC3E65422034052416 /* FPSLabel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FPSLabel/FPSLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FPSLabel/FPSLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FPSLabel/FPSLabel.modulemap";
+				PRODUCT_MODULE_NAME = FPSLabel;
+				PRODUCT_NAME = FPSLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E0575EEE152580911C0250A8332F43DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2403DA29A5C2B51390237D6EC302856A /* Pods-FPSLabel_Example.debug.xcconfig */;
@@ -676,41 +716,9 @@
 			};
 			name = Debug;
 		};
-		E325EA3989925736FC14835EAC5EEC3E /* Release */ = {
+		F4D5B14211530AA593C5371BBAA0E631 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D247431C14F2A366208D17365060956F /* FPSLabel.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FPSLabel/FPSLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FPSLabel/FPSLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FPSLabel/FPSLabel.modulemap";
-				PRODUCT_MODULE_NAME = FPSLabel;
-				PRODUCT_NAME = FPSLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FC5A2DBC1735E30518437D8F074AB786 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5D4B9B1B86BE6584113A81BDF677503 /* FPSLabel.debug.xcconfig */;
+			baseConfigurationReference = A0475F09870F9EADF364EBB9C1C77BA3 /* FPSLabel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -742,15 +750,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		075925699CEAC687E81306A1CC08219C /* Build configuration list for PBXNativeTarget "FPSLabel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC5A2DBC1735E30518437D8F074AB786 /* Debug */,
-				E325EA3989925736FC14835EAC5EEC3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -774,6 +773,15 @@
 			buildConfigurations = (
 				E0575EEE152580911C0250A8332F43DB /* Debug */,
 				ADD0DD8E48C053F706389F82113AF05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85F6F23B4DCB7DE2879B20356DB6342C /* Build configuration list for PBXNativeTarget "FPSLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D5B14211530AA593C5371BBAA0E631 /* Debug */,
+				B600B202869DA94411CBE8E16A6914A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

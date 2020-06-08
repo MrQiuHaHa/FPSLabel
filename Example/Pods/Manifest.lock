@@ -1,5 +1,5 @@
 PODS:
-  - FPSLabel (0.1.1)
+  - FPSLabel (0.1.2)
 
 DEPENDENCIES:
   - FPSLabel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FPSLabel: 939cb72416ddbab41ba793cbf01a75d6f7bdc257
+  FPSLabel: db3ba995d961e5f1b6ea758427915fa69e5e312e
 
 PODFILE CHECKSUM: 47a25ccd3c53df3bda49050646ea7bacf872d831
 

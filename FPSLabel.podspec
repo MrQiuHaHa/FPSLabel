@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FPSLabel"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A short description of FPSLabel."
   s.description  = <<-DESC
             FPS监控

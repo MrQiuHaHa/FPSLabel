@@ -12,6 +12,7 @@
 
 #import "FPSLabel.h"
 #import "JRWeakProxy.h"
+#import "UIViewController+FPSLabel.h"
 
 FOUNDATION_EXPORT double FPSLabelVersionNumber;
 FOUNDATION_EXPORT const unsigned char FPSLabelVersionString[];
