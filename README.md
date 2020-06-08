@@ -18,7 +18,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 source 'https://github.com/MrQiuHaHa/JRSpecs.git'   # 在podfile最上面指定源
-pod 'FPSLabel'
+pod 'FPSLabel'  # 直接引入工程即可生效，不需要导入头文件实现，无任何代码侵入原工程
 ```
 
 ## Author
