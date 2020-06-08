@@ -17,6 +17,7 @@ FPSLabel is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/MrQiuHaHa/JRSpecs.git'   # 在podfile最上面指定源
 pod 'FPSLabel'
 ```
 
