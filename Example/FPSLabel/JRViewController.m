@@ -7,9 +7,10 @@
 //
 
 #import "JRViewController.h"
+#import <FPSLabel.h>
 
 @interface JRViewController ()
-
+@property (nonatomic, strong) FPSLabel *fpsLabel;
 @end
 
 @implementation JRViewController
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    _fpsLabel = [FPSLabel new];
+    _fpsLabel.frame = CGRectMake(200, 200, 50, 30);
+    [_fpsLabel sizeToFit];
+    [self.view addSubview:_fpsLabel];
 }
 
 - (void)didReceiveMemoryWarning
