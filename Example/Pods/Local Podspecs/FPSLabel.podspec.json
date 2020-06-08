@@ -1,6 +1,6 @@
 {
   "name": "FPSLabel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of FPSLabel.",
   "description": "FPS监控",
   "homepage": "https://github.com/MrQiuHaHa/FPSLabel",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MrQiuHaHa/FPSLabel.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "source_files": "FPSLabel/Classes/**/*.{h,m}",
   "platforms": {
