@@ -21,7 +21,7 @@ do
         cd ../
         complete=true
     elif [ $COMMAND == "2" ]; then
-        pod lib lint --sources=YMSpecs,master --use-libraries --verbose --allow-warnings
+        pod lib lint --sources=JRSpecs,master --use-libraries --verbose --allow-warnings
         complete=true
     elif [ $COMMAND == "3" ]; then
 
@@ -51,7 +51,7 @@ do
             fi
         done < $PODSPEC
 
-        pod repo push YMSpecs $PODSPEC --sources=YMSpecs,master --use-libraries --verbose --allow-warnings
+        pod repo push JRSpecs $PODSPEC --sources=JRSpecs,master --use-libraries --verbose --allow-warnings
         complete=true
     else
         complete=false
